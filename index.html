@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/burger.png">
+  <title>Coopers Taste&Juicy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="botonera">
+      <nav class="encabezado">
+        <a href="index.html" class="rotar">
+          <img src="img/logo.png" alt="Logo de Coopers" width="100" height="100">
+        </a>
+        <ul>
+          <li class="transform">
+            <a href="secciones/menu.html">Menu</a>
+          </li>
+          <li class="transform">
+            <a href="secciones/promo.html">Promos</a>
+          </li>
+          <li class="transform">
+            <a href="#mensaje">Mensajes</a>
+          </li>
+          <li class="transform">
+            <a href="secciones/nosotros.html">Nosotros</a>
+          </li>
+          <li class="transform">
+            <a href="secciones/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="mainCentro" id="carrousel">
+      <div>
+        <img src="img/hero.jpg" alt="Hamburguesas Gourmet" class="hero__img--fluid">
+      </div>
+      <section>
+        <div id="centro">
+          <article class="bgGen coop__articulo">
+            <h1 class="textCenter coop__titulo--xl">Hamburguesas gourmet pensadas para vos</h1>
+            <p class="textCenter">Lorem ipsum olor sit amet consectetur adipisicing elit. Doloremque fugit, provident
+              mollitia, nostrum, quidem obcaecati ut vero nemo velit laboriosam quia impedit saepe incidunt architecto
+              reprehenderit, error consectetur pariatur ipsum.
+            </p>
+            <p class="coop__texto--md"><span class="textBold">Lorem, ipsum dolor sit amet consectetur adipisicing,
+                elit.</span> Blanditiis nemo nobis, quaerat reprehenderit recusandae ratione repudiandae delectus, id
+              exercitationem architecto dolor ullam nesciunt? Deserunt eveniet dolorum accusantium assumenda ex
+              reiciendis?
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+
+    <section id="formu" class="formu2">
+      <!-- <div class="form"> -->
+      <article class="form">
+        <!-- Formulario -->
+        <!-- <div> -->
+        <!-- <h2 class="bgDest coop__titulo--md">Que te parecio el producto</h2> -->
+        <!-- inicia form -->
+        <form action="envio.php" method="post" id="mensaje">
+          <fieldset>
+            <legend class="coop__texto--md">Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Aldo" name="nombre" id="nombre">
+            <br>
+            <label for="email">Email (opcional)</label>
+            <input type="email" placeholder="mail@mail.com" name="email" id="email">
+            <br>
+          </fieldset>
+          <fieldset>
+            <legend class="coop__texto--md">Valoracion</legend>
+            <label for="poco">Poco Satisfecho</label>
+            <input type="radio" name="calificacion" placeholder="poco" id="poco">
+            <br>
+            <label for="bueno">Bueno</label>
+            <input type="radio" name="calificacion" placeholder="bueno" id="bueno">
+            <br>
+            <label for="muy">Muy Satisfecho</label>
+            <input type="radio" name="calificacion" placeholder="muy" id="muy">
+          </fieldset>
+          <fieldset>
+            <legend>Localidad</legend>
+            <select name="Localidad" id="">Localidad
+              <option value="san salvador">San Salvador</option>
+              <option value="palpala">Palpala</option>
+              <option value="perico">Perico</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="mensaje" class="coop__texto--md">Deja un comentario</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+          </fieldset>
+        </form>
+        <!-- </div> -->
+      </article>
+      <!-- cierra form -->
+      <!-- </div> -->
+    </section>
+
+
+
+
+
+    <!-- </article> -->
+    <article id="mapa" class="mapa2">
+      <div class="mapMargen">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.3082159162254!2d-65.28754808620192!3d-24.195982684371554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b05f8ab60d599%3A0x35a92a380ee443ed!2sDr.%20Carrillo%20137%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1645599219664!5m2!1ses-419!2sar"
+          width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </article>
+
+
+    <!-- </main> -->
+
+    <footer id="pie">
+      <div class="foot footer">
+        <h2 class="foot__titulo--md">Seguinos en nuestras Redes</h2>
+        <a href="https://facebook.com" target="_blank" class="animation">
+          <img src="img/face.png" class="foot__icon--sm" alt="">
+        </a>
+        <a href="http://instagram.com" target="_blank" class="animation">
+          <img src="img/insta.png" alt="" class="foot__icon--sm">
+        </a>
+        <a href="https://twitter.com" target="_blank" class="animation">
+          <img src="img/twit.png" alt="" class="foot__icon--sm">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

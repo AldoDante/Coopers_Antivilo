@@ -1,0 +1,767 @@
+* {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+  color: #732c02;
+}
+
+section article p {
+  color: #732c02;
+  font-size: 1.8rem;
+  font-weight: 1rem; /* peso tipográfico */
+  line-height: 2.4rem; /* interlineado */
+}
+/* botonera start*/
+
+.encabezado {
+  /*background-color: #f28705; */
+  background: rgb(242,135,5); /* Gradiente Botonera */
+  background: linear-gradient(0deg, rgba(242,135,5,1) 0%, rgba(0,0,0,1) 65%);
+  top: 0;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.encabezado a {
+  text-decoration: none;
+}
+.encabezado ul {
+  display: flex;
+  margin-left: 30px;
+}
+.encabezado ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+.encabezado ul li a {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #260101;
+}
+*.encabezado ul li a:hover {
+  font-weight: 700;
+  color: #732c02;
+}
+
+.footer {
+  background: rgb(242,135,5);
+background: linear-gradient(180deg, rgba(242,135,5,1) 0%, rgba(0,0,0,1) 98%);
+}
+/*botonera end*/
+
+/* clases camelCase  */
+
+.textDestacado {
+  background-color: rgba(255, 252, 0, 0.4);
+}
+
+.textBold {
+  font-weight: 600;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.bgDest {
+  background-color: #bf9075;
+}
+
+.bgGen {
+  background-color: #f28705;
+}
+
+/* BEM */
+
+.hero__img--fluid {
+  width: 100%; /*ancho*/
+}
+.coop__box--white {
+  text-align: center;
+  background-color: white;
+  /*padding*/
+  padding: 10px 0;
+}
+.coop__texto--md {
+  font-size: 1.7rem;
+}
+
+.coop__titulo--xl {
+  font-size: 3rem;
+}
+
+.coop__titulo--md {
+  font-size: 2rem;
+}
+
+/* camelCase  */
+
+.textBold {
+  font-weight: 600;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.coop__articulo {
+  width: 95%; /*ancho*/
+  height: auto; /*alto*/
+  overflow-y: hidden;
+  margin: 10px auto; /*margen arriba/abajo... margen derecha/izquierda*/
+  padding: 20px 30px; /*relleno arriba/abajo... margen derecha/izquierda*/
+  box-sizing: border-box; /*resta al width los atributos de caja */
+  border: solid 2px #732c02;
+}
+
+/* Formulario y Mapa*/
+.hero {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mapMargen {
+  margin: 20px 20px;
+}
+
+.mapa2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+
+.foot {
+  padding: 30px 0;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.foot a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.foot__icon--sm {
+  width: 40px;
+}
+
+.foot__titulo--md {
+  font-size: 2rem;
+  margin-left: 50px;
+  display: none;
+}
+/*                                            fin index                                                                                 */
+
+/* inicio Menu */
+
+.sectionCentro {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* inicio promo*/
+
+.sectionPromo {
+  display: inline-block;
+  margin: 20px;
+}
+.divPromo {
+  display: inline-block;
+  width: 40%;
+  height: 131px;
+  text-align: center;
+  overflow: scroll;
+}
+.cenTro {
+  text-align: center;
+  margin: 0 auto;
+}
+/* inicio Nosotros*/
+
+.sectionNosotros {
+  display: flex;
+  flex-direction: column;
+}
+/* Inicio Contacto*/
+
+.sectionContacto {
+  display: flex;
+  justify-content: center;
+}
+
+/*                    Formato Mobile index              */
+
+#contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "nav"
+    "hero"
+    "main"
+    "form"
+    "map"
+    "footer";
+}
+
+#botonera {
+  grid-area: nav;
+}
+
+#carrousel {
+  grid-area: hero;
+}
+
+#centro {
+  grid-area: main;
+}
+
+#formu {
+  grid-area: form;
+}
+
+#mapa {
+  grid-area: map;
+}
+
+#pie {
+  grid-area: footer;
+}
+
+/* Media Queries  768 index.html */
+
+@media screen and (min-width: 768px) {
+  #contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "nav nav "
+      "hero hero "
+      "main main "
+      "form  map"
+      "footer footer ";
+  }
+  .encabezado {
+    top: 0;
+    padding: 10px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(242,135,5);
+    background: linear-gradient(90deg, rgba(242,135,5,1) 0%, rgba(115,44,0,1) 32%);
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .formu2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mapa2 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* mediaq 1024px para index.html */
+
+@media screen and (min-width: 1024px) {
+  #contenedor {
+    grid-template-columns: 40% 10% 10% 40%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "nav nav  nav nav"
+      "hero hero hero hero"
+      "main main main main"
+      "map . . form"
+      "footer footer footer footer";
+  }
+}
+
+/* fin mediaq para index.html */
+
+/*                          MENU                       */
+
+#menugrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "navm"
+    "herom"
+    "mainm"
+    "footerm";
+}
+
+#botomen {
+  grid-area: navm;
+}
+
+#carrouselm {
+  grid-area: herom;
+}
+
+#centrom {
+  grid-area: mainm;
+}
+
+#piem {
+  grid-area: footerm;
+}
+
+/*   mediaq 768px menu.html    */
+
+@media screen and (min-width: 768px) {
+  #menugrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navm  navm"
+      "herom  herom"
+      "mainm  mainm"
+      "footerm  footerm";
+  }
+
+  .sectionCentro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .itemMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*  mediaq 1024px menu.html  */
+
+@media screen and (min-width: 1024px) {
+  #menugrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navm navm navm"
+      "herom herom herom"
+      "mainm mainm mainm"
+      "footerm footerm footerm";
+  }
+
+  .encabezado {
+    top: 0;
+    padding: 40px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+
+  .sectionCentro {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .itemMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .itemMenu figure {
+    margin-right: 20px;
+  }
+}
+
+/*                      promo.html                  */
+
+#promogrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "navp"
+    "herop"
+    "mainp"
+    "footerp";
+}
+
+
+#botopro {
+  grid-area: navp;
+}
+
+#carrouselp {
+  grid-area: herop;
+}
+
+#centrop {
+  grid-area: mainp;
+}
+
+#piep {
+  grid-area: footerp;
+}
+
+/*   mediaq 768px promo.html    */
+
+@media screen and (min-width: 768px) {
+  #promogrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navp  navp"
+      "herop  herop"
+      "mainp  mainp"
+      "footerp  footerp";
+  }
+
+  .sectionCentro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .itemMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*   mediaq 1024px promo.html    */
+
+@media screen and (min-width: 1024px) {
+  #promogrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navp navp navp"
+      "herop herop herop"
+      "mainp mainp mainp"
+      "footerp footerp footerp";
+  }
+
+  .encabezado {
+    top: 0;
+    padding: 40px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+
+  .sectionCentro {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .itemMenu {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .itemMenu figure {
+    margin-right: 20px;
+  }
+}
+
+/*                    nosotros.html             */
+
+#nosgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "navn"
+    "heron"
+    "mainn"
+    "footern";
+}
+
+
+#botonos {
+  grid-area: navn;
+}
+
+#carrouseln {
+  grid-area: heron;
+}
+
+#centron {
+  grid-area: mainn;
+}
+
+#pien {
+  grid-area: footern;
+}
+
+/*   mediaq 768px Nosotros.html    */
+
+@media screen and (min-width: 768px) {
+  #nosgrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navn  navn"
+      "heron  heron"
+      "mainn  mainn"
+      "footern  footern";
+  }
+
+  .sectionCentro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*   mediaq 1024px nosotros.html    */
+
+@media screen and (min-width: 1024px) {
+  #nosgrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navn navn navn"
+      "heron heron heron"
+      "mainn mainn mainn"
+      "footern footern footern";
+  }
+
+  .encabezado {
+    top: 0;
+    padding: 40px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+}
+
+/*               contacto.html              */
+
+#congrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "navc"
+    "heroc"
+    "mainc"
+    "footerc";
+}
+
+
+#botocon {
+  grid-area: navc;
+}
+
+#carrouselc {
+  grid-area: heroc;
+}
+
+#centroc {
+  grid-area: mainc;
+}
+
+#piec {
+  grid-area: footerc;
+}
+
+
+/*   mediaq 768px contacto.html    */
+
+@media screen and (min-width: 768px) {
+  #congrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navc  navc"
+      "heroc  heroc"
+      "mainc  mainc"
+      "footerc  footerc";
+  }
+
+  .sectionCentro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*   mediaq 1024px contacto.html    */
+
+@media screen and (min-width: 1024px) {
+  #congrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navc navc navc"
+      "heroc heroc heroc"
+      "mainc mainc mainc"
+      "footerc footerc footerc";
+  }
+
+  .encabezado {
+    top: 0;
+    padding: 40px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+}
+
+/*            Animaciones             */
+
+.rotar:hover {
+  transform: rotateY(360deg);
+  transition: transform 5s;
+}
+
+@keyframes redes {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.animation:hover {
+  animation-name: redes;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+.burger:hover { 
+  transform: rotateZ(3deg);
+  transition: transform 2s;
+  cursor: pointer;
+}
+
+@keyframes nosotros {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.aninos { nosotros 1s ease 3s infinite normal both;
+   animation-name: nosotros;
+   animation-duration: 1s;
+   animation-timing-function: ease;
+   animation animation-delay: 3s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: both;
+ }

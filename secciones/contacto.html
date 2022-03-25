@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="shortcut icon" href="../img/burger.png">
+	<title>Coopers Taste&Juicy</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div id="congrid">
+	<header id="botocon">
+		<nav class="encabezado">
+			<a href="../index.html" class="rotar">
+				<img src="../img/logo.png" alt="Logo de Coopers" width="100" height="100">
+			</a>
+			<ul>
+				<li class="transform">
+					<a href="menu.html">Menu</a>
+				</li>
+				<li class="transform">
+					<a href="promo.html">Promos</a>
+				</li>
+				<li class="transform">
+					<a href="../index.html#mensaje">Mensajes</a>
+				</li>
+				<li class="transform">
+					<a href="nosotros.html">Nosotros</a>
+				</li>
+				<li class="transform">
+					<a href="contacto.html">Contacto</a>
+				</li>
+			</ul>		
+		</nav>
+	</header>		
+	<main id="carrouselc">
+		<img src="../img/contacto.jpg" alt="Hamburguesas Gourmet" class="hero__img--fluid aninos">
+		<article>
+			<h1 class="coop__titulo--xl bgGen cenTro">Queres formar parte del Staff?</h1>
+				<!-- inicia form -->
+			<div id="centroc" class="sectionContacto">
+				<form action="envio.php" method="post" id="mensaje">
+					<fieldset>
+						<legend class="coop__titulo--xl">Datos personales</legend>
+						<label for="nombre">Nombre</label>
+						<input type="text" placeholder="Aldo" name="nombre" id="nombre">
+						<br>
+						<label for="apellido">Apellido</label>
+						<input type="text" placeholder="Antivilo" name="apellido" id="apellido">
+						<br>
+						<label for="email">Email</label>
+						<input type="email"	placeholder="mail@mail.com" name="email" id="email">
+						<br>
+						<label for="mensaje">Experiencia en el rubro</label><br>
+							<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+							<br><br>
+							<input type="submit" value="Enviar">
+							<input type="reset" value="Cancelar">
+					</fieldset>
+				</form>
+			</div>
+				<!-- cierra form -->
+		</article>
+	</main>
+	<footer id="piec">
+		<div class="foot footer">
+			<h2 class="foot__titulo--md">Redes sociales</h2>
+			<a href="https://facebook.com" target="_blank" class="animation">
+				<img src="../img/face.png" alt="">
+			</a>
+			<a href="http://instagram.com" target="_blank" class="animation">
+				<img src="../img/insta.png" alt="">
+			</a>
+			<a href="https://twitter.com" target="_blank" class="animation">
+				<img src="../img/twit.png" alt="">
+			</a>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
