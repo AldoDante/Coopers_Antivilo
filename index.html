@@ -5,39 +5,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/burger.png">
-  <title>Coopers Taste&Juicy</title>
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
+  <title>Coopers Taste&Juicy</title>
+  
 </head>
 
 <body>
   <div id="contenedor">
     <header id="botonera">
-      <nav class="encabezado">
-        <a href="index.html" class="rotar">
-          <img src="img/logo.png" alt="Logo de Coopers" width="100" height="100">
-        </a>
-        <ul>
-          <li class="transform">
-            <a href="secciones/menu.html">Menu</a>
-          </li>
-          <li class="transform">
-            <a href="secciones/promo.html">Promos</a>
-          </li>
-          <li class="transform">
-            <a href="#mensaje">Mensajes</a>
-          </li>
-          <li class="transform">
-            <a href="secciones/nosotros.html">Nosotros</a>
-          </li>
-          <li class="transform">
-            <a href="secciones/contacto.html">Contacto</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-md navbar-light bgGen">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="" alt="logo coopers" width="100" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto my-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="secciones/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/promo.html">Promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mensaje">Mensajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+              </li>                        
+            </ul>            
+          </div>
+        </div>
       </nav>
     </header>
     <main class="mainCentro" id="carrousel">
-      <div>
-        <img src="img/hero.jpg" alt="Hamburguesas Gourmet" class="hero__img--fluid">
+
+      <!-- Carrousel -->
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/hero.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hero2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/hero3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <section>
         <div id="centro">
@@ -57,59 +106,44 @@
       </section>
     </main>
 
+    <!-- Formulario -->
 
     <section id="formu" class="formu2">
-      <!-- <div class="form"> -->
-      <article class="form">
-        <!-- Formulario -->
-        <!-- <div> -->
-        <!-- <h2 class="bgDest coop__titulo--md">Que te parecio el producto</h2> -->
-        <!-- inicia form -->
-        <form action="envio.php" method="post" id="mensaje">
-          <fieldset>
-            <legend class="coop__texto--md">Datos personales</legend>
-            <label for="nombre">Nombre</label>
-            <input type="text" placeholder="Aldo" name="nombre" id="nombre">
-            <br>
-            <label for="email">Email (opcional)</label>
-            <input type="email" placeholder="mail@mail.com" name="email" id="email">
-            <br>
-          </fieldset>
-          <fieldset>
-            <legend class="coop__texto--md">Valoracion</legend>
-            <label for="poco">Poco Satisfecho</label>
-            <input type="radio" name="calificacion" placeholder="poco" id="poco">
-            <br>
-            <label for="bueno">Bueno</label>
-            <input type="radio" name="calificacion" placeholder="bueno" id="bueno">
-            <br>
-            <label for="muy">Muy Satisfecho</label>
-            <input type="radio" name="calificacion" placeholder="muy" id="muy">
-          </fieldset>
-          <fieldset>
-            <legend>Localidad</legend>
-            <select name="Localidad" id="">Localidad
-              <option value="san salvador">San Salvador</option>
-              <option value="palpala">Palpala</option>
-              <option value="perico">Perico</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <label for="mensaje" class="coop__texto--md">Deja un comentario</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Cancelar">
-          </fieldset>
-        </form>
-        <!-- </div> -->
+     
+      <article class="form" id="mensaje">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Aldo Dante">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Malo
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Bueno
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Muy Bueno!
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario (opcional)</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Cancelar">
+        </div>
       </article>
+      
       <!-- cierra form -->
-      <!-- </div> -->
+     
     </section>
-
-
-
-
 
     <!-- </article> -->
     <article id="mapa" class="mapa2">
@@ -120,7 +154,6 @@
         </iframe>
       </div>
     </article>
-
 
     <!-- </main> -->
 
@@ -139,6 +172,8 @@
       </div>
     </footer>
   </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
