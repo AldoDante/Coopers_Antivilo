@@ -175,10 +175,10 @@ section article p {
 /* Footer */
 
 .foot {
-  padding: 30px 0;
-  margin: 50px auto;
+  padding: 10px 0;
+  margin: 20px auto;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .foot a {
@@ -205,7 +205,7 @@ section article p {
 /*              fin index        */
 
 /* inicio Menu */
-
+/*
 .sectionCentro {
   display: flex;
   flex-direction: column;
@@ -236,6 +236,7 @@ section article p {
   text-align: center;
   margin: 0 auto;
 }
+
 /* inicio Nosotros*/
 
 .sectionNosotros {
@@ -249,206 +250,7 @@ section article p {
   justify-content: center;
 }
 
-/*                    Formato Mobile index              */
 
-#contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas:
-    "nav"
-    "hero"
-    "main"
-    "form"
-    "map"
-    "footer";
-}
-
-#botonera {
-  grid-area: nav;
-}
-
-#carrousel {
-  grid-area: hero;
-}
-
-#centro {
-  grid-area: main;
-}
-
-#formu {
-  grid-area: form;
-}
-
-#mapa {
-  grid-area: map;
-}
-
-#pie {
-  grid-area: footer;
-}
-
-/* Media Queries  768 index.html */
-
-@media screen and (min-width: 768px) {
-  #contenedor {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-      "nav nav "
-      "hero hero "
-      "main main "
-      "form  map"
-      "footer footer ";
-  }
-  .encabezado {
-    top: 0;
-    padding: 10px 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(242,135,5);
-    background: linear-gradient(90deg, rgba(242,135,5,1) 0%, rgba(115,44,0,1) 32%);
-  }
-  header nav ul {
-    flex-direction: column;
-  }
-
-  .form {
-    display: flex;
-    flex-direction: column;    
-   /* CENTRAR */
-    justify-content: center;
-  }
-
-  .formu2 {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .mapa2 {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/* mediaq 1024px para index.html */
-
-@media screen and (min-width: 1024px) {
-  #contenedor {
-    grid-template-columns: 40% 10% 10% 40%;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas:
-      "nav nav  nav nav"
-      "hero hero hero hero"
-      "main main main main"
-      "map . . form"
-      "footer footer footer footer";
-  }
-}
-
-/* fin mediaq para index.html */
-
-/*                          MENU                       */
-
-#menugrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-    "navm"
-    "herom"
-    "mainm"
-    "footerm";
-}
-
-#botomen {
-  grid-area: navm;
-}
-
-#carrouselm {
-  grid-area: herom;
-}
-
-#centrom {
-  grid-area: mainm;
-}
-
-#piem {
-  grid-area: footerm;
-}
-
-/*   mediaq 768px menu.html    */
-
-@media screen and (min-width: 768px) {
-  #menugrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-      "navm  navm"
-      "herom  herom"
-      "mainm  mainm"
-      "footerm  footerm";
-  }
-
-  .sectionCentro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .itemMenu {
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-
-/*  mediaq 1024px menu.html  */
-
-@media screen and (min-width: 1024px) {
-  #menugrid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-      "navm navm navm"
-      "herom herom herom"
-      "mainm mainm mainm"
-      "footerm footerm footerm";
-  }
-
-  .encabezado {
-    top: 0;
-    padding: 40px 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header nav ul {
-    flex-direction: row;
-  }
-
-  .sectionCentro {
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .itemMenu {
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .itemMenu figure {
-    margin-right: 20px;
-  }
-}
 
 /*                      promo.html                  */
 
@@ -627,6 +429,81 @@ section article p {
   }
 }
 
+/*                    nosotros.html             */
+
+#nosgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "navn"
+    "heron"
+    "mainn"
+    "footern";
+}
+
+
+#botonos {
+  grid-area: navn;
+}
+
+#carrouseln {
+  grid-area: heron;
+}
+
+#centron {
+  grid-area: mainn;
+}
+
+#pien {
+  grid-area: footern;
+}
+
+/*   mediaq 768px Nosotros.html    */
+
+@media screen and (min-width: 768px) {
+  #nosgrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navn  navn"
+      "heron  heron"
+      "mainn  mainn"
+      "footern  footern";
+  }
+
+  .sectionCentro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*   mediaq 1024px nosotros.html    */
+
+@media screen and (min-width: 1024px) {
+  #nosgrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "navn navn navn"
+      "heron heron heron"
+      "mainn mainn mainn"
+      "footern footern footern";
+  }
+
+  .encabezado {
+    top: 0;
+    padding: 40px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+}
+
 /*               contacto.html              */
 
 #congrid {
@@ -716,23 +593,18 @@ section article p {
     transform: translateX(0%);
     transform-origin: 50% 50%;
   }
-
   15% {
     transform: translateX(-30px) rotate(-6deg);
   }
-
   30% {
     transform: translateX(15px) rotate(6deg);
   }
-
   45% {
     transform: translateX(-15px) rotate(-3.6deg);
   }
-
   60% {
     transform: translateX(9px) rotate(2.4deg);
   }
-
   75% {
     transform: translateX(-6px) rotate(-1.2deg);
   }
