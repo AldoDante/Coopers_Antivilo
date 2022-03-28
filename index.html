@@ -16,10 +16,10 @@
 <body>
   <div id="contenedor">
     <header id="botonera">
-      <nav class="navbar navbar-expand-md navbar-light bgGen">
+      <nav class="navbar navbar-expand-md navbar-light bgGen fs-3 fw-bold">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="" alt="logo coopers" width="100" height="100">
+            <img src="img/logo.png" alt="logo coopers" width="100" height="100">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto my-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="secciones/menu.html">Menu</a>
+                <a class="nav-link" aria-current="page" href="secciones/menu.html">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="secciones/promo.html">Promo</a>
@@ -88,6 +88,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      
       <section>
         <div id="centro">
           <article class="bgGen coop__articulo">
@@ -108,11 +109,13 @@
 
     <!-- Formulario -->
 
-    <section id="formu" class="formu2">
-     
-      <article class="form" id="mensaje">
+<section class="">
+  <div class="">
+    <div id="mensaje" class="row d-flex justify-content-evenly">
+      <article class="col-md-4 bgGen">
+        <h2>Contacto</h2>
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
+          <label for="nombre" class="form-label fs-4">Nombre</label>
           <input type="text" class="form-control" id="nombre" placeholder="Aldo Dante">
         </div>
         <div class="form-check">
@@ -134,29 +137,27 @@
           </label>
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Comentario (opcional)</label>
+          <label for="exampleFormControlTextarea1" class="form-label fs-4">Comentario (opcional)</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           <input type="submit" value="Enviar">
           <input type="reset" value="Cancelar">
         </div>
+        </form>
       </article>
       
-      <!-- cierra form -->
-     
-    </section>
+      <!-- ends form-->
 
-    <!-- </article> -->
-    <article id="mapa" class="mapa2">
-      <div class="mapMargen">
-        <iframe
+      <article class="col-md-4 d-flex">
+
+       <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.3082159162254!2d-65.28754808620192!3d-24.195982684371554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b05f8ab60d599%3A0x35a92a380ee443ed!2sDr.%20Carrillo%20137%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1645599219664!5m2!1ses-419!2sar"
           width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
-      </div>
-    </article>
-
-    <!-- </main> -->
-
+      </article>    
+    </div>
+  </div>
+</section>
+  
     <footer id="pie">
       <div class="foot footer">
         <h2 class="foot__titulo--md">Seguinos en nuestras Redes</h2>
