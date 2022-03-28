@@ -646,3 +646,8 @@ section article p {
    animation-direction: normal;
    animation-fill-mode: both;
  }
+
+ .btn-coop {
+    color: #fff;
+    background-color: #732c02;
+    
