@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+.rotar:hover {
+  transform: rotateY(360deg);
+  transition: transform 5s; }
+
+@keyframes redes {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%; }
+  15% {
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg); } }
+
+.animation:hover {
+  animation-name: redes;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both; }
+
+.botonera {
+  background-color: #f28705;
+  font-family: "Arial", sans-serif; }
+  .botonera ul li a {
+    font-size: 2rem;
+    font-weight: 600; }
+
+.main {
+  background-image: url(../img/back.jpg);
+  background-attachment: fixed; }
+
+#leyenda {
+  background-color: #f28705;
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  margin: 10px auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: solid 2px #732c02;
+  justify-content: center; }
+  #leyenda h1 {
+    color: #732c02;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600; }
+  #leyenda p {
+    font-size: 1.5rem;
+    text-align: center; }
+
+#formu {
+  background-color: #f28705; }
+
+.footer {
+  padding: 10px 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: #f28705; }
+  .footer h3 {
+    font-size: 2rem;
+    margin-left: 50px;
+    display: none; }
+  .footer a {
+    text-decoration: none;
+    margin: 20px; }

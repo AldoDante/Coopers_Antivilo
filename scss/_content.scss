@@ -1,0 +1,33 @@
+.main{
+	background-image: url(../img/back.jpg);
+  	background-attachment: fixed;
+}
+
+#leyenda{
+	background-color:$mainColor;
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	margin: 10px auto;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: solid 2px $secondColor;
+	justify-content: center;
+	h1{
+		color:$secondColor;
+		text-align: center;
+		font-size: $textLg;
+		font-weight: 600;
+
+	}
+	p{
+		font-size:$textSm;
+		text-align: center;
+
+	}
+
+}
+
+#formu{
+	background-color:$mainColor;
+}
