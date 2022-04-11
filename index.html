@@ -14,8 +14,11 @@
   
 </head>
 
-<body>  
+<body class="main">  
   <header>  
+
+    <!-- Inicia Nav -->
+
     <nav class="navbar navbar-expand-md navbar-light botonera">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -50,122 +53,114 @@
 
     <!-- Fin nav -->
 
-  <main class="main">
+  <main>
   
     <!-- Inicio Carrousel -->
 
-    <section>
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/hero.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/hero2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="img/hero3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <section id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/hero.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/hero3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
 
     <!-- Fin Carrousel -->
     
-    <section>
-        <div>
-          <article id="leyenda" class="bgGen coop__articulo">
-            <h1 class="textCenter coop__titulo--xl">Hamburguesas gourmet pensadas para vos</h1>
-            <p class="textCenter"><span class="textBold">En coopers creemos que tus mejores momentos siempre van a estar acompañados de familia, amigos y una buena comida,</span> para eso reformulamos la receta original de la hamburguesa desarrollando hamburguesas gourmet, llenas de sabor, de estilo casero, usando los mejores ingredientes frescos y naturales. Presentadas en un pan casero especial de elaboración propia para que puedas disfrutar de una experiencia gastronómica única, garantizando la calidad y la originalidad de nuestros productos.
-            </p>
-            <p class="coop__titulo--md textCenter"><span class="textBold">Porque tus mejores momentos los vivís acá junto a nosotros.
-            Cooper´s 20 años creando lo mejor pensando en vos.</span>
-            </p>
-          </article>
-        </div>
+    <section>        
+      <article id="leyenda" class="bgGen coop__articulo">
+        <h1 class="textCenter coop__titulo--xl">Hamburguesas gourmet pensadas para vos</h1>
+        <p class="textCenter"><span class="textBold">En coopers creemos que tus mejores momentos siempre van a estar acompañados de familia, amigos y una buena comida,</span> para eso reformulamos la receta original de la hamburguesa desarrollando hamburguesas gourmet, llenas de sabor, de estilo casero, usando los mejores ingredientes frescos y naturales. Presentadas en un pan casero especial de elaboración propia para que puedas disfrutar de una experiencia gastronómica única, garantizando la calidad y la originalidad de nuestros productos.
+        </p>
+        <p class="coop__titulo--md textCenter"><span class="textBold">Porque tus mejores momentos los vivís acá junto a nosotros. Cooper´s 20 años creando lo mejor para vos.</span>
+        </p>
+      </article>
+        
     </section>
     
 
     <!-- Inicio Formulario -->
 
-    <section>
-      <div id="mensaje" class="row justify-content-evenly">
-        <article id="formu" class="d-flex flex-column col-xs-4 col-sm-6 col-md-4">
-          <h2>Contacto</h2>
-          <div class="mb-3">
-            <label for="nombre" class="form-label fs-4">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Aldo Dante">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-                Malo
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-                Bueno
-            </label>
-          </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Muy Bueno!
-              </label>
-            </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label fs-4">Comentario (opcional)</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Cancelar">
-          </div>           
-        </article>
+    <section id="mensaje" class="row justify-content-evenly">
+      <article id="formu" class="d-flex flex-column col-xs-4 col-sm-6 col-md-4">
+        <h2>Contacto</h2>
+        <div class="mb-3">
+          <label for="nombre" class="form-label fs-4">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Aldo Dante">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Malo
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Bueno
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Muy Bueno!
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label fs-4">Comentario (opcional)</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Cancelar">
+        </div>
+      </article>
          
     <!--Fin Formulario-->
 
     <!-- Inicio Mapa -->
 
-        <article class="col-sm-7 col-md-4 d-flex mt-3">
-          <iframe
+      <article class="col-sm-7 col-md-4 d-flex mt-3">
+        <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.3082159162254!2d-65.28754808620192!3d-24.195982684371554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b05f8ab60d599%3A0x35a92a380ee443ed!2sDr.%20Carrillo%20137%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1645599219664!5m2!1ses-419!2sar"
               width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
-        </article>    
-      </div>        
+        </iframe>
+      </article>              
     </section>
     
     <!-- Fin Mapa -->
 
+  </main>
+    
     <!-- Inicio Footer -->
 
-    <footer>
-      <div class="footer">
-        <h3 class="foot__titulo--md">Seguinos en nuestras Redes</h3>
-        <a href="https://facebook.com" target="_blank" class="animation">
-          <img src="img/face.png" class="foot__icon--sm" alt="">
-        </a>
-        <a href="http://instagram.com" target="_blank" class="animation">
-          <img src="img/insta.png" alt="" class="foot__icon--sm">
-        </a>
-        <a href="https://twitter.com" target="_blank" class="animation">
-          <img src="img/twit.png" alt="" class="foot__icon--sm">
-        </a>
-      </div>
-    </footer>
+  <footer class="footer">      
+    <h3 class="foot__titulo--md">Seguinos en nuestras Redes</h3>
+    <a href="https://facebook.com" target="_blank" class="animation">
+      <img src="img/face.png" class="foot__icon--sm" alt="">
+    </a>
+    <a href="http://instagram.com" target="_blank" class="animation">
+      <img src="img/insta.png" alt="" class="foot__icon--sm">
+    </a>
+    <a href="https://twitter.com" target="_blank" class="animation">
+      <img src="img/twit.png" alt="" class="foot__icon--sm">
+    </a>      
+  </footer>
 
     <!-- Fin Footer -->
-
-  </main>
-
+  
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
