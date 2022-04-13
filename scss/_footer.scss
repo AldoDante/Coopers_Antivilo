@@ -1,10 +1,10 @@
+//extend
+
 .footer{
-    padding: 10px 0;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    background: $mainColor;
-      h3{
+    @include footer(10px,20px);
+    @extend .footer;      
+      background: linear-gradient(180deg, rgba(242,135,5,1) 0%, rgba(0,0,0,1) 98%);
+      h2,h3{
         font-size: 2rem;
         margin-left: 50px;
         display: none;
@@ -12,10 +12,6 @@
         a{
             text-decoration: none;
             margin: 20px;
-
-
+        
         }
-
-
-
-}
+  }

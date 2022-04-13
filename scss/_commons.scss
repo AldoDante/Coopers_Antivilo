@@ -11,3 +11,32 @@ $w-75:75%;
 $w-50:50%;
 $w-25:20%;
 
+//mixin
+
+@mixin maintext(){
+	font-size:$textSm;
+	text-align: center;
+}
+
+@mixin h1(){
+	color:$secondColor;
+	text-align: center;
+	font-size: $textLg;
+	font-weight: 600;
+}
+
+@mixin footer($padding,$margin-top){
+	padding:$padding;
+    margin-top:$margin-top;
+    display: flex;
+    justify-content: center;
+    background: $mainColor;
+}
+
+// map
+
+$borde:(
+	'brd1':2px solid $secondColor,
+	'brd2':3px solid $secondColor,
+	'brd3':4px solid $secondColor,
+)

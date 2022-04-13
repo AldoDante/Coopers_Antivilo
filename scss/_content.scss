@@ -11,23 +11,93 @@
 	margin: 10px auto;
 	padding: 10px 20px;
 	box-sizing: border-box;
-	border: solid 2px $secondColor;
+	border:map-get($map:$borde,$key:'brd2');
 	justify-content: center;
 	h1{
-		color:$secondColor;
-		text-align: center;
-		font-size: $textLg;
-		font-weight: 600;
-
+		@include h1();
 	}
 	p{
-		font-size:$textSm;
-		text-align: center;
-
+		@include maintext();
+	}
+	span{
+		font-weight: 600;
+		color: #732c02
 	}
 
 }
 
 #formu{
 	background-color:$mainColor;
+	border:map-get($map:$borde,$key:'brd1');
+}
+
+//menu.html
+
+.bgGen {
+  background-color: $mainColor;
+}
+
+.btn-coop {
+    color: #fff;
+    background-color: #732c02;
+    
+  }
+
+// promo.html
+
+.imgFluid {
+  width: 100%;
+}
+
+//nosotros.html
+
+.nosotros{
+	background-color:$mainColor;
+	height: auto;
+	overflow: hidden;
+	margin: 10px auto;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border:map-get($map:$borde,$key:'brd2');
+	justify-content: center;
+	h1{
+		@include h1();
+	}
+	p{
+		@include maintext();
+	}
+	span{
+		font-weight: 600;
+		color: #732c02
+	}
+}
+
+// contacto.html
+
+.accordion-coop {
+  background-color: white;
+  
+}
+
+.accordion-button {
+   	font-weight: 600;
+		font-size: 1.5rem;
+    color: white;    
+    background-color: #D96704;
+    &:not(.collapsed) {
+    	font-weight: 600;
+			font-size: 1.5rem;
+    	color: white;
+    	background-color: $mainColor;
+   
+	}
+   
+}
+.contacto{
+	display: flex;
+	background-color: $mainColor;
+	justify-content: center;
+	padding-bottom: 10px;
+	@include h1();
+
 }
