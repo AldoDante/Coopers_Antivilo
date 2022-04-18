@@ -72,7 +72,8 @@ html {
   color: #502314; }
 
 .main {
-  background-color: #f5ebdc; }
+  background-color: #f5ebdc;
+  overflow-x: hidden; }
 
 #leyenda {
   background-color: whitesmoke;
