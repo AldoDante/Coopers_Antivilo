@@ -1,9 +1,19 @@
 //extend
 
 .footer{
-    @include footer(10px,20px);
+  ul{
+    text-decoration: none;
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: 600;
+    vertical-align: middle;
+    a{
+      color: white
+    }
+  }
+    @include foot(10px,20px);
     @extend .footer;      
-      background: linear-gradient(180deg, rgba(242,135,5,1) 0%, rgba(0,0,0,1) 98%);
+      background: $secondColor;
       h2,h3{
         font-size: 2rem;
         margin-left: 50px;
@@ -11,7 +21,7 @@
       }
         a{
             text-decoration: none;
-            margin: 20px;
-        
+            margin: 20px;        
         }
-  }
+
+}

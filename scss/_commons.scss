@@ -1,7 +1,8 @@
 //variables globales
 
-$mainColor: #f28705;
-$secondColor: #732c02;
+$mainColor: #f5ebdc;
+$secondColor: #502314;
+$thirdColor: #782d14;
 $gradColor: linear-gradient(0deg, rgba(242,135,5,1) 0%, rgba(0,0,0,1) 65%);
 
 //sizing
@@ -25,13 +26,21 @@ $w-25:20%;
 	font-weight: 600;
 }
 
-@mixin footer($padding,$margin-top){
+@mixin foot($padding,$margin-top){
 	padding:$padding;
     margin-top:$margin-top;
     display: flex;
     justify-content: center;
     background: $mainColor;
 }
+
+@mixin form(){
+	border-radius: 10px;
+	box-shadow: 0px 8px 5px -3px rgba(156,156,156,0.83);
+	-webkit-box-shadow: 0px 8px 5px -3px rgba(156,156,156,0.83);
+	-moz-box-shadow: 0px 8px 5px -3px rgba(156,156,156,0.83);
+}
+
 
 // map
 

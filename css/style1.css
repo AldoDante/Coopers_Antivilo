@@ -62,28 +62,30 @@ html {
   animation-fill-mode: both; }
 
 .botonera {
-  background-color: #f28705;
+  background-color: #f5ebdc;
   font-family: "Arial", sans-serif; }
   .botonera ul li a {
     font-size: 2rem;
     font-weight: 600; }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #502314; }
+
 .main {
-  background-image: url(../img/back.jpg);
-  background-attachment: fixed; }
+  background-color: #f5ebdc; }
 
 #leyenda {
-  background-color: #f28705;
+  background-color: whitesmoke;
   width: 95%;
   height: auto;
   overflow: hidden;
   margin: 10px auto;
   padding: 10px 20px;
   box-sizing: border-box;
-  border: 3px solid #732c02;
+  border: 3px solid #502314;
   justify-content: center; }
   #leyenda h1 {
-    color: #732c02;
+    color: #502314;
     text-align: center;
     font-size: 3rem;
     font-weight: 600; }
@@ -94,12 +96,24 @@ html {
     font-weight: 600;
     color: #732c02; }
 
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
+  -webkit-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
+  -moz-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83); }
+
 #formu {
-  background-color: #f28705;
-  border: 2px solid #732c02; }
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid #502314;
+  border-radius: 10px;
+  box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
+  -webkit-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
+  -moz-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83); }
 
 .bgGen {
-  background-color: #f28705; }
+  background-color: whitesmoke; }
 
 .btn-coop {
   color: #fff;
@@ -109,16 +123,16 @@ html {
   width: 100%; }
 
 .nosotros {
-  background-color: #f28705;
+  background-color: whitesmoke;
   height: auto;
   overflow: hidden;
   margin: 10px auto;
   padding: 10px 20px;
   box-sizing: border-box;
-  border: 3px solid #732c02;
+  border: 3px solid #502314;
   justify-content: center; }
   .nosotros h1 {
-    color: #732c02;
+    color: #502314;
     text-align: center;
     font-size: 3rem;
     font-weight: 600; }
@@ -136,19 +150,19 @@ html {
   font-weight: 600;
   font-size: 1.5rem;
   color: white;
-  background-color: #D96704; }
+  background-color: #502314; }
   .accordion-button:not(.collapsed) {
     font-weight: 600;
     font-size: 1.5rem;
     color: white;
-    background-color: #f28705; }
+    background-color: #782d14; }
 
 .contacto {
   display: flex;
-  background-color: #f28705;
+  background-color: #f5ebdc;
   justify-content: center;
   padding-bottom: 10px;
-  color: #732c02;
+  color: #502314;
   text-align: center;
   font-size: 3rem;
   font-weight: 600; }
@@ -158,8 +172,16 @@ html {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  background: #f28705;
-  background: linear-gradient(180deg, #f28705 0%, black 98%); }
+  background: #f5ebdc;
+  background: #502314; }
+  .footer ul {
+    text-decoration: none;
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: 600;
+    vertical-align: middle; }
+    .footer ul a {
+      color: white; }
   .footer h2, .footer h3 {
     font-size: 2rem;
     margin-left: 50px;

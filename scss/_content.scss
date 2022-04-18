@@ -1,10 +1,12 @@
+// index.html
+
 .main{
-	background-image: url(../img/back.jpg);
-  	background-attachment: fixed;
+	background-color: #f5ebdc
+
 }
 
 #leyenda{
-	background-color:$mainColor;
+	background-color:whitesmoke;
 	width: 95%;
 	height: auto;
 	overflow: hidden;
@@ -26,15 +28,25 @@
 
 }
 
+// cards
+
+.card{
+	background-color: white;
+	@include form();
+	
+}
+
 #formu{
-	background-color:$mainColor;
+	overflow:hidden;
+	background-color:white;
 	border:map-get($map:$borde,$key:'brd1');
+	@include form();
 }
 
 //menu.html
 
 .bgGen {
-  background-color: $mainColor;
+  background-color: whitesmoke;
 }
 
 .btn-coop {
@@ -52,7 +64,7 @@
 //nosotros.html
 
 .nosotros{
-	background-color:$mainColor;
+	background-color:whitesmoke;
 	height: auto;
 	overflow: hidden;
 	margin: 10px auto;
@@ -83,12 +95,12 @@
    	font-weight: 600;
 		font-size: 1.5rem;
     color: white;    
-    background-color: #D96704;
+    background-color: $secondColor;
     &:not(.collapsed) {
     	font-weight: 600;
 			font-size: 1.5rem;
     	color: white;
-    	background-color: $mainColor;
+    	background-color: $thirdColor;
    
 	}
    
@@ -101,3 +113,4 @@
 	@include h1();
 
 }
+

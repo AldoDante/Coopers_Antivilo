@@ -1,9 +1,6 @@
 //nesting
 
 .botonera{
-	img{
-		
-	}
 	background-color:$mainColor;
 	font-family:$fontMain;	
 	ul{
@@ -15,4 +12,7 @@
 		}
 	}
 	
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $secondColor;
 }
