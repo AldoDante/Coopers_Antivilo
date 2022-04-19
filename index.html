@@ -178,35 +178,37 @@
     <!-- Inicio Formulario -->
 
     <section id="mensaje" class="row justify-content-evenly">
-      <article id="formu" class="d-flex flex-column col-xs-4 col-sm-6 col-md-4">
-        <h2>Contacto</h2>
-        <div class="mb-3">
-          <label for="nombre" class="form-label fs-4">Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Aldo Dante">
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
-            Malo
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label" for="flexRadioDefault2">
-            Bueno
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
-            Muy Bueno!
-          </label>
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label fs-4">Comentario (opcional)</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Cancelar">
+      <article class="d-flex flex-column col-sm-6 col-md-4">
+        <div id="formu">
+          <h2>Contacto</h2>
+          <div class="mb-3">
+            <label for="nombre" class="form-label fs-4">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Aldo Dante">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Malo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Bueno
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Muy Bueno!
+            </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label fs-4">Comentario (opcional)</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+          </div>
         </div>
       </article>
          
@@ -214,11 +216,13 @@
 
     <!-- Inicio Mapa -->
 
-      <article id="formu" class="col-sm-7 col-md-4 d-flex mt-3 d-flex justify-content-center">             
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.3082159162254!2d-65.28754808620192!3d-24.195982684371554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b05f8ab60d599%3A0x35a92a380ee443ed!2sDr.%20Carrillo%20137%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1645599219664!5m2!1ses-419!2sar"
-              width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+      <article class="d-flex col-sm-6 col-md-4 mt-3">
+        <div id="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.3082159162254!2d-65.28754808620192!3d-24.195982684371554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b05f8ab60d599%3A0x35a92a380ee443ed!2sDr.%20Carrillo%20137%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1645599219664!5m2!1ses-419!2sar"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div> 
       </article>              
     </section>
     
@@ -228,18 +232,7 @@
     
     <!-- Inicio Footer -->
 
-  <footer class="footer justify-content-evenly">
-    <ul>
-      <li>
-        <a href="index.html">HOME</a>
-      </li>
-      <li>
-        <a href="secciones/menu.html">MENU</a>
-      </li>
-      <li>
-        <a href="secciones/promo.html">PROMO</a>
-      </li>
-    </ul> 
+  <footer class="footer">  
     <h3 class="foot__titulo--md">Seguinos en nuestras Redes</h3>
     <a href="https://facebook.com" target="_blank" class="animation">
       <img src="img/face.png" alt="link a facebook">
@@ -249,19 +242,7 @@
     </a>
     <a href="https://twitter.com" target="_blank" class="animation">
       <img src="img/twit.png" alt="link a twitter">
-    </a>
-    
-    <ul>
-      <li>
-        <a href="secciones/menu.html">EVENTOS</a>
-      </li>
-      <li>
-        <a href="secciones/nosotros.html">NOSOTROS</a>
-      </li>
-      <li>
-        <a href="secciones/contacto.html">CONTACTO</a>
-      </li>
-    </ul> 
+    </a> 
   </footer>
 
     <!-- Fin Footer -->

@@ -2,7 +2,7 @@
 
 .main{
 	background-color: #f5ebdc;
-	overflow-x: hidden;
+	overflow-x: hidden;	
 
 }
 
@@ -32,17 +32,34 @@
 // cards
 
 .card{
+	font-size: $textSm;
+	text-align: center;
 	background-color: white;
 	@include form();
 	
 }
 
 #formu{
+	font-size: $textSm;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 	overflow:hidden;
 	background-color:white;
 	border:map-get($map:$borde,$key:'brd1');
 	@include form();
 }
+
+#map{
+	justify-content: center;
+	margin-left: 15px;
+	margin-right: 15px;
+	overflow:hidden;
+	background-color:white;
+	border:map-get($map:$borde,$key:'brd1');
+	@include form();
+}
+
 
 //menu.html
 
@@ -99,7 +116,7 @@
     background-color: $secondColor;
     &:not(.collapsed) {
     	font-weight: 600;
-			font-size: 1.5rem;
+			font-size: $textSm;
     	color: white;
     	background-color: $thirdColor;
    

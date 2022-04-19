@@ -98,6 +98,8 @@ html {
     color: #732c02; }
 
 .card {
+  font-size: 1.5rem;
+  text-align: center;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
@@ -105,6 +107,22 @@ html {
   -moz-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83); }
 
 #formu {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid #502314;
+  border-radius: 10px;
+  box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
+  -webkit-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83);
+  -moz-box-shadow: 0px 8px 5px -3px rgba(156, 156, 156, 0.83); }
+
+#map {
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
   overflow: hidden;
   background-color: white;
   border: 2px solid #502314;
