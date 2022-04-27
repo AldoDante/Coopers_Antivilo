@@ -2,13 +2,32 @@
 
 .main{
 	background-color: #f5ebdc;
-	overflow-x: hidden;	
 
 }
 
+.navbar-toggler {
+		margin-right: 25px;
+		@media (min-width: 280px) and (max-width: 367px){
+				margin-left: auto;
+				margin-right: auto;		
+		}
+
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+  }
+
 #leyenda{
 	background-color:whitesmoke;
-	width: 95%;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin: 10px auto;
@@ -33,10 +52,21 @@
 
 .card{
 	font-size: $textSm;
+	padding: 0;
 	text-align: center;
 	background-color: white;
 	@include form();
 	
+}
+
+.imaCard {
+	object-fit: cover;
+}
+
+//Formulario y Mapa
+
+.formYmap{
+	max-width: 100%;
 }
 
 #formu{
@@ -102,6 +132,11 @@
 	}
 }
 
+.old{
+	margin: 10px auto;
+}
+
+
 // contacto.html
 
 .accordion-coop {
@@ -120,9 +155,12 @@
     	color: white;
     	background-color: $thirdColor;
    
-	}
-   
+	} 
 }
+.accordion-body{
+	font-size: 1.5rem;
+}
+
 .contacto{
 	display: flex;
 	background-color: $mainColor;
@@ -132,3 +170,41 @@
 
 }
 
+//404
+
+#body{
+	height: 100%;
+}
+
+#homer{
+	width: 30%;
+}
+.container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	margin-top: 35px;
+	justify-content: center;
+
+	}
+
+	#ouch{
+		color: $secondColor;
+		font-weight:bold;
+		text-align: center;
+	}
+
+	.boton{
+		padding: 10px 30px;
+		border-radius: 15px;
+		border-color: $secondColor;
+		background: $mainColor;
+		a{ 
+			text-decoration: none;
+			color: $secondColor;
+			font-weight: 600;
+
+		}
+	}
