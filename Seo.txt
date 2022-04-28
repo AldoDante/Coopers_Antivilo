@@ -1,0 +1,35 @@
+SEO
+
+Agregue estos titulos:
+
+index.html: Coopers Burgers
+menu.html: Menú Coopers Burgers
+promo.html: Promociones Coopers
+nosotros.html: Coopers Staff
+contacto.html: Contacto
+
+Agregue la etiqueta meta con las siguientes descripciones:
+
+index.html: Homemade Style, Hamburguesas gourmet pensadas para vos
+menu.html: Un menu con todas las hamburguesas que te gustan
+promo.html: Increibles promociones para vos y tus amigos
+nosotros.html: El mejor staff para brindarte el mejor producto
+contaco.html: Envianos tus datos para postularte en Coopers
+
+Agregue las siguientes keywords
+
+index.html: hamburguesa, gourmet, amigos, familia, frescos, naturales, calidad
+menu.html: menu, variedad, hamburguesa, casera, sabor
+promo.html: dos por uno, happy hour, amigos, fin de semana
+nosotros.html: tradicion gastronomica, diez años en gastronomia, estilo homemade
+contaco.html:contacto, formar parte de coopers, requisitos, experiencia laboral
+
+H1:
+
+index.html: Hamburguesas gourmet pensadas para vos
+menu.html: Menu Coopers
+promo.html: Promo´s Coopers
+nosotros.html: Nuestro Staff
+contacto.html: Forma parte de la familia Coopers
+
+Todas las imagenes con alt comentado
